@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GRAVITY FADE — модерен барбършоп в центъра на София. Мъжко подстригване, Skin Fade, оформяне на брада и онлайн записване на час.">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>GRAVITY FADE | Барбършоп в София — Подстригване, Skin Fade &amp; Брада</title>
+
+  <!-- Google Fonts with full Bulgarian Cyrillic support + graceful offline system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Accessible skip link for keyboard navigation -->
+  <a class="skip-link" href="#main-content">Към основното съдържание</a>
+
+  <!-- =====================================================================
+       STICKY NAVIGATION BAR
+       ===================================================================== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="GRAVITY FADE — начало">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+            <rect x="2" y="2" width="28" height="28" rx="4" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M10 22L22 10M10 10L22 22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="16" cy="16" r="2.2" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">GRAVITY FADE</span>
+          <span class="brand-sub">BARBERSHOP • СОФИЯ</span>
+        </span>
+      </a>
+
+      <!-- Desktop navigation links -->
+      <nav class="main-nav" aria-label="Основна навигация">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Услуги и цени</a></li>
+          <li><a href="#visit" class="nav-link">Работно време и локация</a></li>
+          <li><a href="#contact" class="nav-link">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <!-- Direct booking CTA + mobile menu toggle -->
+      <div class="header-actions">
+        <a href="#booking" class="btn btn-gold btn-sm">Запази час</a>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menuToggle"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+          aria-label="Отвори менюто"
+        >
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile slide-down drawer -->
+    <nav class="mobile-nav" id="mobileNav" aria-label="Мобилно меню" hidden>
+      <div class="container mobile-nav-inner">
+        <a href="#services" class="mobile-nav-link">Услуги и цени</a>
+        <a href="#visit" class="mobile-nav-link">Работно време и локация</a>
+        <a href="#booking" class="mobile-nav-link">Запази час онлайн</a>
+        <div class="mobile-nav-quick">
+          <a href="tel:+359888123456" class="btn btn-outline btn-block">Обади се: 0888 123 456</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- =====================================================================
+         HERO SECTION
+         ===================================================================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Център, София • ул. „Цар Асен“ 42
+          </p>
+
+          <h1 class="hero-title" id="hero-title">
+            Прецизен стил.<br>
+            <span class="text-gold">Безупречен fade.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Модерен барбършоп в сърцето на София, където класическият занаят среща съвременната техника. Внимание към всеки детайл, премиум козметика и атмосфера без бързане.
+          </p>
+
+          <!-- Primary Phone & Viber CTAs + Online Booking Shortcut -->
+          <div class="hero-actions">
+            <a href="tel:+359888123456" class="btn btn-gold btn-lg">
+              <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Обади се</span>
+            </a>
+
+            <a href="viber://chat?number=%2B359888123456" class="btn btn-viber btn-lg">
+              <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                <path d="M9.5 9.2c.3-.5.8-.7 1.3-.3l.8.7c.3.3.4.8.2 1.1l-.4.6a5.4 5.4 0 0 0 2.3 2.3l.6-.4c.3-.2.8-.1 1.1.2l.7.8c.4.5.2 1-.3 1.3-.6.4-1.5.5-2.5.1a8.5 8.5 0 0 1-3.9-3.9c-.4-1-.3-1.9.1-2.5z"/>
+              </svg>
+              <span>Пиши във Viber</span>
+            </a>
+
+            <a href="#booking" class="btn btn-ghost btn-lg">
+              <span>Запази онлайн</span>
+              <svg class="icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Compact hero facts strip -->
+          <div class="hero-meta" aria-label="Бърза информация">
+            <div class="meta-item">
+              <span class="meta-label">Телефон</span>
+              <a href="tel:+359888123456" class="meta-value">+359 888 123 456</a>
+            </div>
+            <div class="meta-divider" aria-hidden="true"></div>
+            <div class="meta-item">
+              <span class="meta-label">Работно време</span>
+              <span class="meta-value">Пон–Пет 10:00–20:00 • Съб 10:00–18:00</span>
+            </div>
+            <div class="meta-divider" aria-hidden="true"></div>
+            <div class="meta-item">
+              <span class="meta-label">Статус сега</span>
+              <span class="meta-value status-pill" id="openStatus">Проверява се…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SERVICES & PRICES SECTION
+         ===================================================================== -->
+    <section class="section services-section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">Меню с услуги</p>
+          <h2 class="section-title" id="services-heading">Услуги и цени</h2>
+          <p class="section-lead">
+            Ясни цени, достатъчно време за всеки клиент и професионални продукти. Изберете услуга, за да я заредите директно във формата за записване.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Мъжко подстригване -->
+          <article class="service-card">
+            <div class="service-top">
+              <div>
+                <h3 class="service-name">Мъжко подстригване</h3>
+                <p class="service-duration">40 мин • Консултация, измиване и стайлинг</p>
+              </div>
+              <div class="service-price">
+                <span class="price-main">20 €</span>
+                <span class="price-sub">39.12 лв.</span>
+              </div>
+            </div>
+            <p class="service-desc">
+              Класическа или модерна прическа с ножица и машинка, съобразена с формата на главата и посоката на растеж на косата.
+            </p>
+            <button type="button" class="service-select-btn" data-select-service="Мъжко подстригване">
+              <span>Запази тази услуга</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Service 2: Skin Fade -->
+          <article class="service-card">
+            <div class="service-top">
+              <div>
+                <h3 class="service-name">Skin Fade</h3>
+                <p class="service-duration">45 мин • Преход до нула с шейвър</p>
+              </div>
+              <div class="service-price">
+                <span class="price-main">23 €</span>
+                <span class="price-sub">44.98 лв.</span>
+              </div>
+            </div>
+            <p class="service-desc">
+              Прецизен плавен преход (Low, Mid или High Fade) с професионален шейвър, остри контури, измиване и финишен стайлинг.
+            </p>
+            <button type="button" class="service-select-btn" data-select-service="Skin Fade">
+              <span>Запази тази услуга</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Service 3: Оформяне на брада -->
+          <article class="service-card">
+            <div class="service-top">
+              <div>
+                <h3 class="service-name">Оформяне на брада</h3>
+                <p class="service-duration">30 мин • Топла кърпа и бръснач</p>
+              </div>
+              <div class="service-price">
+                <span class="price-main">14 €</span>
+                <span class="price-sub">27.38 лв.</span>
+              </div>
+            </div>
+            <p class="service-desc">
+              Симетрично оформяне и подравняване с машинка, контуриране с бръснач, ритуал с топла кърпа, афтършейв балсам и масло за брада.
+            </p>
+            <button type="button" class="service-select-btn" data-select-service="Оформяне на брада">
+              <span>Запази тази услуга</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Service 4: Комплект коса + брада (Featured) -->
+          <article class="service-card service-card-featured">
+            <span class="service-badge">Най-избирана</span>
+            <div class="service-top">
+              <div>
+                <h3 class="service-name">Комплект коса + брада</h3>
+                <p class="service-duration">75 мин • Пълна грижа от глава до брада</p>
+              </div>
+              <div class="service-price">
+                <span class="price-main">30 €</span>
+                <span class="price-sub">58.67 лв.</span>
+              </div>
+            </div>
+            <p class="service-desc">
+              Комбиниран пакет: мъжко подстригване или Skin Fade, пълно оформяне на брада с топла кърпа и бръснач, измиване и стайлинг.
+            </p>
+            <button type="button" class="service-select-btn" data-select-service="Комплект коса + брада">
+              <span>Запази комплекта</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </article>
+        </div>
+
+        <p class="services-note">
+          Всички услуги включват безплатно еспресо или напитка. Плащане в брой или с карта на място.
+        </p>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         VISIT INFO (HOURS & SOFIA ADDRESS) + BOOKING FORM SECTION
+         ===================================================================== -->
+    <section class="section booking-section" id="visit" aria-labelledby="booking-heading">
+      <div class="container booking-layout">
+        <!-- Left column: Working hours & Sofia location -->
+        <aside class="info-panel" aria-label="Работно време и адрес">
+          <div class="section-header section-header-compact">
+            <p class="section-kicker">Посетете ни</p>
+            <h2 class="section-title">Работно време и локация</h2>
+          </div>
+
+          <!-- Working Hours Card -->
+          <div class="info-card">
+            <div class="info-card-head">
+              <svg class="info-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <h3 class="info-card-title">Работно време</h3>
+            </div>
+            <dl class="hours-list">
+              <div class="hours-row" data-days="1,2,3,4,5">
+                <dt>Понеделник – Петък</dt>
+                <dd>10:00 – 20:00</dd>
+              </div>
+              <div class="hours-row" data-days="6">
+                <dt>Събота</dt>
+                <dd>10:00 – 18:00</dd>
+              </div>
+              <div class="hours-row hours-row-closed" data-days="0">
+                <dt>Неделя</dt>
+                <dd>Почивен ден</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Sofia Address Card -->
+          <div class="info-card">
+            <div class="info-card-head">
+              <svg class="info-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <h3 class="info-card-title">Адрес в София</h3>
+            </div>
+            <address class="address-block">
+              <strong>GRAVITY FADE Barbershop</strong><br>
+              ул. „Цар Асен“ 42, партер<br>
+              Център, 1000 София, България
+            </address>
+            <p class="address-hint">
+              На 3 минути пеша от метростанция „НДК“ и бул. „Витоша“. Платено паркиране (Синя зона) пред салона.
+            </p>
+            <div class="info-card-actions">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=%D1%83%D0%BB.+%D0%A6%D0%B0%D1%80+%D0%90%D1%81%D0%B5%D0%BD+42,+%D0%A1%D0%BE%D1%84%D0%B8%D1%8F"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+              >
+                Отвори в Google Maps
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Direct contact quick box -->
+          <div class="info-card info-card-contact">
+            <p class="contact-prompt">Предпочитате директна връзка?</p>
+            <div class="contact-buttons">
+              <a href="tel:+359888123456" class="btn btn-outline btn-sm">0888 123 456</a>
+              <a href="viber://chat?number=%2B359888123456" class="btn btn-viber btn-sm">Viber чат</a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right column: Interactive Appointment Booking Form -->
+        <div class="booking-panel" id="booking">
+          <div class="booking-card">
+            <div class="booking-card-header">
+              <p class="section-kicker">Онлайн резервация</p>
+              <h2 class="section-title" id="booking-heading">Запази час</h2>
+              <p class="booking-intro">
+                Попълнете данните си и изберете удобен ден и час. Ще получите потвърждение по телефон или имейл.
+              </p>
+            </div>
+
+            <form id="bookingForm" class="booking-form" novalidate>
+              <div class="form-grid">
+                <!-- Name -->
+                <div class="form-field form-field-full">
+                  <label for="clientName" class="form-label">Име и фамилия <span class="req" aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="clientName"
+                    name="name"
+                    class="form-input"
+                    placeholder="напр. Георги Иванов"
+                    autocomplete="name"
+                    required
+                  >
+                  <p class="field-error" id="clientNameError" role="alert"></p>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-field">
+                  <label for="clientPhone" class="form-label">Телефон <span class="req" aria-hidden="true">*</span></label>
+                  <input
+                    type="tel"
+                    id="clientPhone"
+                    name="phone"
+                    class="form-input"
+                    placeholder="0888 123 456"
+                    autocomplete="tel"
+                    required
+                  >
+                  <p class="field-error" id="clientPhoneError" role="alert"></p>
+                </div>
+
+                <!-- Email -->
+                <div class="form-field">
+                  <label for="clientEmail" class="form-label">Имейл <span class="req" aria-hidden="true">*</span></label>
+                  <input
+                    type="email"
+                    id="clientEmail"
+                    name="email"
+                    class="form-input"
+                    placeholder="name@example.com"
+                    autocomplete="email"
+                    required
+                  >
+                  <p class="field-error" id="clientEmailError" role="alert"></p>
+                </div>
+
+                <!-- Service -->
+                <div class="form-field form-field-full">
+                  <label for="bookingService" class="form-label">Услуга <span class="req" aria-hidden="true">*</span></label>
+                  <select id="bookingService" name="service" class="form-input form-select" required>
+                    <option value="">Изберете услуга…</option>
+                    <option value="Мъжко подстригване">Мъжко подстригване — 20 € / 39.12 лв. (40 мин)</option>
+                    <option value="Skin Fade">Skin Fade — 23 € / 44.98 лв. (45 мин)</option>
+                    <option value="Оформяне на брада">Оформяне на брада — 14 € / 27.38 лв. (30 мин)</option>
+                    <option value="Комплект коса + брада">Комплект коса + брада — 30 € / 58.67 лв. (75 мин)</option>
+                  </select>
+                  <p class="field-error" id="bookingServiceError" role="alert"></p>
+                </div>
+
+                <!-- Preferred Date -->
+                <div class="form-field">
+                  <label for="bookingDate" class="form-label">Предпочитана дата <span class="req" aria-hidden="true">*</span></label>
+                  <input
+                    type="date"
+                    id="bookingDate"
+                    name="date"
+                    class="form-input"
+                    required
+                  >
+                  <p class="field-error" id="bookingDateError" role="alert"></p>
+                </div>
+
+                <!-- Preferred Time (dynamically populated according to working hours) -->
+                <div class="form-field">
+                  <label for="bookingTime" class="form-label">Предпочитан час <span class="req" aria-hidden="true">*</span></label>
+                  <select id="bookingTime" name="time" class="form-input form-select" required>
+                    <option value="">Първо изберете дата…</option>
+                  </select>
+                  <p class="field-error" id="bookingTimeError" role="alert"></p>
+                </div>
+              </div>
+
+              <!-- Global form error banner (e.g., if external email endpoint fails) -->
+              <div class="form-alert" id="formAlert" role="alert" hidden></div>
+
+              <button type="submit" class="btn btn-gold btn-lg btn-block" id="submitBookingBtn">
+                <span class="btn-label">Изпрати заявка за час</span>
+              </button>
+
+              <p class="form-privacy">
+                Данните ви се използват единствено за потвърждение на вашата резервация в GRAVITY FADE.
+              </p>
+            </form>
+
+            <!-- Confirmation View (shown after valid submission) -->
+            <div class="booking-confirmation" id="bookingConfirmation" hidden tabindex="-1" aria-live="polite">
+              <div class="confirmation-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <h3 class="confirmation-title">Заявката ви е приета!</h3>
+              <p class="confirmation-text">
+                Благодарим ви, <strong id="confirmName"></strong>! Получихме вашата заявка за час и скоро ще се свържем с вас за финално потвърждение.
+              </p>
+
+              <dl class="confirmation-summary">
+                <div>
+                  <dt>Услуга</dt>
+                  <dd id="confirmService"></dd>
+                </div>
+                <div>
+                  <dt>Дата и час</dt>
+                  <dd id="confirmDateTime"></dd>
+                </div>
+                <div>
+                  <dt>Телефон</dt>
+                  <dd id="confirmPhone"></dd>
+                </div>
+                <div>
+                  <dt>Имейл</dt>
+                  <dd id="confirmEmail"></dd>
+                </div>
+              </dl>
+
+              <div class="confirmation-actions">
+                <button type="button" class="btn btn-outline" id="newBookingBtn">Запази нов час</button>
+                <a href="tel:+359888123456" class="btn btn-gold">Обади се при промяна</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       FOOTER
+       ===================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="26" height="26" fill="none">
+              <rect x="2" y="2" width="28" height="28" rx="4" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M10 22L22 10M10 10L22 22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="16" cy="16" r="2.2" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">GRAVITY FADE</span>
+            <span class="brand-sub">BARBERSHOP • СОФИЯ</span>
+          </span>
+        </a>
+        <p class="footer-desc">
+          Прецизно мъжко подстригване, Skin Fade и грижа за брадата в центъра на София.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Контакти</h3>
+        <ul class="footer-list">
+          <li>ул. „Цар Асен“ 42, Център, 1000 София</li>
+          <li><a href="tel:+359888123456">+359 888 123 456</a></li>
+          <li><a href="viber://chat?number=%2B359888123456">Viber: +359 888 123 456</a></li>
+          <li><a href="mailto:hello@gravityfade.bg">hello@gravityfade.bg</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Работно време</h3>
+        <ul class="footer-list">
+          <li>Пон – Пет: 10:00 – 20:00</li>
+          <li>Събота: 10:00 – 18:00</li>
+          <li>Неделя: Почивен ден</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear">2026</span> GRAVITY FADE. Всички права запазени.</p>
+      <div class="footer-links">
+        <a href="#services">Услуги</a>
+        <a href="#visit">Локация</a>
+        <a href="#booking">Запази час</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
